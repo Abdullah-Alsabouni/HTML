@@ -1,19 +1,30 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name = "viewport" content="width = device-width, initial-scale = 1.0" />
-        <title>forms-inputs</title>
-    </head>
-    <body>
-        <form>
-            <!-- HTML5 Input -->
-            <label for = "name">Name</label> <br> /> <!-- br bir satır atlar--> <!--label etiketleri Name'e basarak Id'ye geçmeyi sağlıyor-->
-            <input type = "text" id = "name" name = "name" /> <br /> 
-            <input type = "submit" value="Gönder" /> <!--type = "submit" tipi gönderen demek. value="Gönder" sayfada çıkan beton  -->
-          <!--  <button type = "submit">Gönder</button> --> <!--type = "submit" tipi gönderen demek. Gönder sayfada çıkan beton-->
-            
-        </form>
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0" />
+    <title>forms-inputs</title>
+</head>
+
+<body>
+    <form>
+        <!-- HTML5 Input -->
+        <label for="name">Name</label> <br />  <!-- br bir satır atlar-->
+        <!--label etiketleri "Name"e basarak Id'ye geçmeyi sağlıyor-->
+        <input type="text" id="name" name="name" /> <br /> <!-- input: bir buton oluşturur-->
+        <label for="email">Email</label> <br />
+        <input type="email" id="email" name="Email" /> <br /> <!-- giri *****@**** şeklinde tanımlanmassa Web sayfası uyarı verir-->
+        <label for = "password">Password</label> <br />
+        <input type = "password" id = "password" name = "password" /> <br />
+        <label type = "date">Date</label> <br /> 
+        <input type ="date" id = "date" neme = "date" /> <br /> <!--"date" butona tarih özelliğini ekler-->
+        <input type="submit" value="Gönder" />
+        <!-- "submit" tipi gönderen demek. value="Gönder" sayfada çıkan buton  -->
+        <!--  <button type = "submit">Gönder</button> --> <!-- "button" yandaki gibi input gibi işlem yapar -->
+        <input type="reset" value="sıfırla" /> <!-- reset silme işlemini yapar -->
+
+    </form>
+</body>
 
 </html>
