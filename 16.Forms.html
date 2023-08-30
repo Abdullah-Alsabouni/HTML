@@ -14,11 +14,36 @@
         <!--label etiketleri "Name"e basarak Id'ye geçmeyi sağlıyor-->
         <input type="text" id="name" name="name" /> <br /> <!-- input: bir buton oluşturur-->
         <label for="email">Email</label> <br />
-        <input type="email" id="email" name="Email" /> <br /> <!-- giri *****@**** şeklinde tanımlanmassa Web sayfası uyarı verir-->
+        <input type="email" id="email" name="Email" /> <br /> <!-- girdi *****@**** şeklinde tanımlanmassa Web sayfası uyarı verir-->
         <label for = "password">Password</label> <br />
         <input type = "password" id = "password" name = "password" /> <br />
         <label type = "date">Date</label> <br /> 
         <input type ="date" id = "date" neme = "date" /> <br /> <!--"date" butona tarih özelliğini ekler-->
+
+        Gender <br />
+        Male
+        <input type = "radio" name = "gender" value="male" checked /> <!--checked "radio" ve "checkbox" ta otomatik olarak seçeneği seçer--> 
+        Female
+        <input type = "radio" name = "gender" value="female" /> <br /> <!--radio seçenek butonu oluşturur. seçenekler arasında tek bir seçenek yapmamız için seçeneklerin name'i aynı olmalı -->
+
+        Hobbies <br />
+        Football
+        <input type = "checkbox" name = "football" id = "football" checked /> <!-- checkbox kullanıcıya birden fazla seçenek yapmasını sağlıyor -->
+        Swimming
+        <input type = "checkbox" name = "swimming" id = "swimming" />
+        Tennis
+        <input type = "checkbox" neme = "Tennis" id  ="Tennis" /> <br />
+        
+        Degree <br />
+
+        <select name = "degree" id = "degree" > <!-- "select" liste şeklinde seçenekler oluşturur-->
+        <option value ="bechelor" selected>Lisans</option> <!-- selected  otomatik olarak seçeneği seçer -->
+        <option value ="msc">Yüksek Lisans</option> 
+        <option value = "phd">Doktora</option>
+        </select>
+        <br />
+                                                                    <!--placholder geçici message(tüm input'larda kullanılır!!!)-->
+        <textarea name = "message" id = "message" rows="10" cols="25" placeholder="your message"></textarea> <!--"textarea" alanı ayarlanabilir bir açıklama alanı oluşturur.rows satır sayısı cols ise sütun sayısını belirler --> 
         <input type="submit" value="Gönder" />
         <!-- "submit" tipi gönderen demek. value="Gönder" sayfada çıkan buton  -->
         <!--  <button type = "submit">Gönder</button> --> <!-- "button" yandaki gibi input gibi işlem yapar -->
